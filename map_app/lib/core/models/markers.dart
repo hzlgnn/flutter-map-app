@@ -1,4 +1,6 @@
 // Model
+import 'package:map_app/src/generated/poi.pb.dart';
+
 class Pin {
   final int id;
   final double lat;
@@ -25,7 +27,16 @@ class Pin {
       website: data['website'] ?? '',
     );
   }
-
+  factory Pin.fromPoiReply(PoiReply data) {
+    return Pin(
+      id: data.id.toInt(),
+      lat: data.lat,
+      lon: data.lon,
+      name: data.name,
+      open_now: data.openNow,
+      website: data.website,
+    );
+  }
   Map<String, dynamic> toJson() => {
         "id": id,
         "lat": lat,
