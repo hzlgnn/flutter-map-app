@@ -19,3 +19,13 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
+map_app/assets/togg-logo.png
+map_app/lib/core/client.dart
+map_app/lib/core/server.dart
+map_app/lib/core/services/auth_controller.dart
+*.proto
+map_app/lib/src/generated/poi.pbjson.dart
+map_app/lib/src/generated/poi.pbgrpc.dart
+map_app/lib/src/generated/poi.pbenum.dart
+map_app/lib/src/generated/poi.pb.dart
+map_app/android/app/google-services.json

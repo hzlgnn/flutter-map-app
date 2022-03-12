@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.map_app">
+    package="com.hgnn.mapapp">
    <application
         android:label="map_app"
         android:name="${applicationName}"

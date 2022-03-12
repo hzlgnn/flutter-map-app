@@ -1,6 +1,21 @@
 # map_app
 
-A new Flutter project.
+Dosya Yapısı:
+> lib
+    > constants (uygulamada kullanılacak constantlar)
+    > core
+        > api 
+        > models
+        > services
+    > ui
+        (her ekranın ayrı .dart dosyası olacak)
+
+Uygulama fonksiyonelligi:
+Giriş
+Lokasyonları harita üzerinde görüntüleme Lokasyon detayı görüntüleme
+Favorilere ekleme
+Favorileri listeme
+Favorilerden kaldırma
 
 ## Getting Started
 
