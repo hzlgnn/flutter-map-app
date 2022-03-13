@@ -1,7 +1,10 @@
 # map_app
 
 Dosya Yapısı:
+
+
 > lib
+
     > components (ayrılarak kullanılacak widgetlar)
 
     > constants (uygulamada kullanılacak constantlar)
