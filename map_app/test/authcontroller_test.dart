@@ -12,22 +12,18 @@ import 'package:provider/provider.dart';
 void main() {
   group('Authentication Kontrol ', () {
     // await Firebase.initializeApp();
+    WidgetsFlutterBinding.ensureInitialized();
     AuthController controller = AuthController();
     Get.put(controller);
 
-    expect(controller.token, "");
-    TextEditingController inputvalue1 = new TextEditingController();
     controller.emailController.text = "Test";
     controller.passwordController.text = "Togg";
     //controller.passwordController.value = "Togg" as TextEditingValue;
 
-    controller.signInWithUsernameAndPassword();
+    //controller.signInWithUsernameAndPassword();
     print(controller.token);
-    print("hey");
-    print(controller.pinList);
-    print("hey");
     // expect(controller.pinList.length, "");
 //      TextEditingValue s = TextEditingValue("Test");
-    // expect(controller.emailController.value, 'Test');
+    expect(controller.emailController.value, 'Test');
   });
 }

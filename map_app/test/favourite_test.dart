@@ -1,8 +1,10 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:map_app/core/core.dart';
 
 void main() {
   group('Favoriler Test', () {
+    WidgetsFlutterBinding.ensureInitialized();
     var favorites = FavouriteController();
     test('Favorilere ekleme', () {
       Pin pin = Pin(
