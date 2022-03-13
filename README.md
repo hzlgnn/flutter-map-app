@@ -3,7 +3,7 @@
 Dosya Yapısı:
 
 
-> lib
+    > lib
 
     > components (ayrılarak kullanılacak widgetlar)
 
