@@ -3,12 +3,19 @@
 Dosya Yapısı:
 > lib
     > components (ayrılarak kullanılacak widgetlar)
+
     > constants (uygulamada kullanılacak constantlar)
+
     > core
+
         > models (Map'de bulunan pinler)
+
         > services (Get controller servisler)
+
     > src (protos için oluşturulan dosyalar)
+
     > ui
+
         (her ekranın ayrı .dart dosyası olacak)
 
 Uygulama fonksiyonelligi:
