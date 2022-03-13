@@ -22,14 +22,25 @@ Dosya Yapısı:
         (her ekranın ayrı .dart dosyası olacak)
 
 Uygulama fonksiyonelligi:
+
 Giriş
+
 Lokasyonları harita üzerinde görüntüleme 
+
 Lokasyon detayı görüntüleme
+
 Favorilere ekleme
+
 Favorileri listeme
+
 Favorilerden kaldırma
 
+
+
 state management için getx kullanılmıştır
+
 map için test api kullanılmıştır
+
 firebase entegrasyonu yapılmıştır
+
 
