@@ -10,7 +10,6 @@ class LogoGraphicHeader extends StatelessWidget {
     return Hero(
         tag: 'App Logo',
         child: SizedBox(
-          // width: 70,
           height: 70,
           child: Container(
             child: Image.asset(

@@ -5,14 +5,14 @@ import 'dart:core';
 import 'package:get/get.dart';
 import 'package:map_app/components/components.dart';
 import 'package:map_app/core/services/auth_controller.dart';
-import 'package:map_app/helper/validator.dart';
 
 class Login extends StatelessWidget {
   final AuthController authController = AuthController.to;
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
-  bool _bisFirstTime = false;
+  Login() {}
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Form(
@@ -26,15 +26,20 @@ class Login extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   LogoGraphicHeader(),
-                  SizedBox(height: 48.0),
-                  Center(
+                  FormVerticalSpace(
+                    height: 48,
+                  ),
+                  const Center(
                     child: Text(
-                      'Login to your account!', style: TextStyle(fontSize: 20),
-                      //onPressed: () => Get.to(ResetPasswordUI()),
+                      'Login to your account!',
+                      style: TextStyle(fontSize: 20),
                     ),
                   ),
-                  SizedBox(height: 48.0),
+                  FormVerticalSpace(
+                    height: 48,
+                  ),
                   FormInputFieldWithIcon(
+                    key: const Key("User name"),
                     controller: authController.emailController,
                     iconPrefix: Icons.email,
                     labelText: 'User name',
@@ -45,6 +50,7 @@ class Login extends StatelessWidget {
                   ),
                   FormVerticalSpace(),
                   FormInputFieldWithIcon(
+                    key: const Key("User Password"),
                     controller: authController.passwordController,
                     iconPrefix: Icons.lock,
                     labelText: 'User Password',
@@ -56,6 +62,7 @@ class Login extends StatelessWidget {
                   ),
                   FormVerticalSpace(),
                   PrimaryButton(
+                      key: const Key('Sign in'),
                       labelText: 'Sign in',
                       onPressed: () async {
                         if (_formKey.currentState!.validate()) {
